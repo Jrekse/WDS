@@ -34,55 +34,55 @@
       <table>
         <hr>
         <div class="row">
-          <button class="col-1 hour">9am</button>
+          <button class="col-1 hour" id="9">9am</button>
           <textarea class="col-10 description"></textarea>
           <button class="col-1 saveBtn">Save</button>
         </div>
         <hr>
         <div class="row">
-          <button class="col-1 hour">10am</button>
+          <button class="col-1 hour" id="10">10am</button>
           <textarea class="col-10 description"></textarea>
           <button class="col-1 saveBtn">Save</button>
         </div>
         <hr>
         <div class="row">
-          <button class="col-1 hour">11am</button>
+          <button class="col-1 hour" id="11">11am</button>
           <textarea class="col-10 description"></textarea>
           <button class="col-1 saveBtn">Save</button>
         </div>
         <hr>
         <div class="row">
-          <button class="col-1 hour">12pm</button>
+          <button class="col-1 hour" id="12">12pm</button>
           <textarea class="col-10 description"></textarea>
           <button class="col-1 saveBtn">Save</button>
         </div>
         <hr>
         <div class="row">
-          <button class="col-1 hour">1pm</button>
+          <button class="col-1 hour" id="13">1pm</button>
           <textarea class="col-10 description"></textarea>
           <button class="col-1 saveBtn">Save</button>
         </div>
         <hr>
         <div class="row">
-          <button class="col-1 hour">2pm</button>
+          <button class="col-1 hour" id="14">2pm</button>
           <textarea class="col-10 description"></textarea>
           <button class="col-1 saveBtn">Save</button>
         </div>
         <hr>
         <div class="row">
-          <button class="col-1 hour">3pm</button>
+          <button class="col-1 hour" id="15">3pm</button>
           <textarea class="col-10 description"></textarea>
           <button class="col-1 saveBtn">Save</button>
         </div>
         <hr>
         <div class="row">
-          <button class="col-1 hour">4pm</button>
+          <button class="col-1 hour" id="16">4pm</button>
           <textarea class="col-10 description"></textarea>
           <button class="col-1 saveBtn">Save</button>
         </div>
         <hr>
         <div class="row">
-          <button class="col-1 hour">5pm</button>
+          <button class="col-1 hour" id="17">5pm</button>
           <textarea class="col-10 description"></textarea>
           <button class="col-1 saveBtn">Save</button>
         </div>
@@ -92,5 +92,50 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"></script>
+
+    <script>
+      var d = new Date();
+      document.getElementById("currentDay").innerHTML = d;
+
+      
+      var currentHour = dayjs().hour();
+      var nine = document.getElementById("9");
+      var nineAm = 9;
+      var ten = document.getElementById("10");
+      var tenAm = 10;
+      var eleven = document.getElementById("11");
+      var elevenAm = 11;
+      var twelve = document.getElementById("12");
+      var twelvePm = 12;
+      var one = document.getElementById("13");
+      var onePm = 13;
+      var two = document.getElementById("14");
+      var twoPm = 14;
+      var three = document.getElementById("15");
+      var threePm = 15;
+      var four = document.getElementById("16");
+      var fourPm = 16;
+      var five = document.getElementById("17");
+      var fivePm = 17;
+      var hourOfDay = [nineAm,tenAm,elevenAm,twelvePm,onePm,twoPm,threePm,fourPm,fivePm];
+      var listItem = [nine,ten,eleven,twelve,one,two,three,four,five];
+      
+      var i;
+      for (i = 0; i < hourOfDay.length; i++){
+        hourOfDay[i] = listItem[i];
+        if (hourOfDay[i] === currentHour){
+          
+        } else if (hourOfDay[i] < currentHour){
+
+        } else {
+
+        }
+        
+      }
+
+      
+    </script>
+
   </body>
 </html>
