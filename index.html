@@ -88,6 +88,12 @@
         </div>
         <hr>
       </table>
+      <div class="container" id="clear-div">
+        <button class="btn btn-outline-warning" id="clear-btn">Clear Schedule</button>
+        <br>
+        <br>
+        <br>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -303,6 +309,12 @@
           var fiveStored = localStorage.getItem("fiveVal");
           document.getElementById("5-text").innerHTML = fiveStored;
         }
+
+        //clears localstorage and refreshes page
+        document.getElementById("clear-btn").addEventListener("click", function(){
+          localStorage.clear();
+          location.reload();
+        })
       
     </script>
 
