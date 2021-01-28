@@ -1,6 +1,6 @@
 # WDS
 
-LINK TO DEPLOYED APP: 
+LINK TO DEPLOYED APP: https://jrekse.github.io/Jrekse/
 
 ![Alt text](screenShot.jpg?raw=true)
 
