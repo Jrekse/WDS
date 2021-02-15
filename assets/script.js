@@ -15,6 +15,15 @@
 
  //assigns hour variables and grabs the current hour from dayjs
  var currentHour = dayjs().hour();
+ var midnight = 0
+ var oneAm = 1;
+ var twoAm = 2;
+ var threeAm = 3
+ var fourAm = 6;
+ var fiveAm = 5;
+ var sixAm = 6;
+ var sevenAm = 7;
+ var eightAm = 8
  var nineAm = 9;
  var tenAm = 10;
  var elevenAm = 11;
@@ -24,6 +33,12 @@
  var threePm = 15;
  var fourPm = 16;
  var fivePm = 17;
+ var sixPm = 18;
+ var sevenPm = 19;
+ var eightPm = 20;
+ var ninePm = 21;
+ var tenPm = 22;
+ var elevenPm = 23;
  //puts hours into an array to be looped through
  var hourOfDay = [nineAm,tenAm,elevenAm,twelvePm,onePm,twoPm,threePm,fourPm,fivePm];
  
