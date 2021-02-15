@@ -3,6 +3,15 @@
  document.getElementById("currentDay").innerHTML = d;
 
  //calls stored events
+ midnightFunction();
+ oneAmFunction();
+ twoAmFunction();
+ threeAmFunction();
+ fourAmFunction();
+ fiveAmFunction();
+ sixFunction();
+ sevenFunction();
+ eightFunction();
  nineFunction();
  tenFunction();
  elevenFunction();
@@ -12,6 +21,12 @@
  threeFunction();
  fourFunction();
  fiveFunction();
+ sixPmFunction();
+ sevenPmFunction();
+ eightPmFunction();
+ ninePmFunction();
+ tenPmFunction();
+ elevenPmFunction();
 
  //assigns hour variables and grabs the current hour from dayjs
  var currentHour = dayjs().hour();
