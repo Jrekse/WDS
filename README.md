@@ -2,7 +2,7 @@
 
 LINK TO DEPLOYED APP: https://jrekse.github.io/Jrekse/
 
-![Alt text](screenShot.jpg?raw=true)
+![Alt text](screenShot.jpg)
 
 The page is set up with a table seperated into three columns. 1-10-1 with the time stamp and save buttons on either end with a text area in the center and <hr> tags to seperate each row as shown below
 
