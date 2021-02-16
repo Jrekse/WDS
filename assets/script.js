@@ -9,18 +9,18 @@
  threeAmFunction();
  fourAmFunction();
  fiveAmFunction();
- sixFunction();
- sevenFunction();
- eightFunction();
- nineFunction();
- tenFunction();
- elevenFunction();
- twelveFunction();
- oneFunction();
- twoFunction();
- threeFunction();
- fourFunction();
- fiveFunction();
+ sixAmFunction();
+ sevenAmFunction();
+ eightAmFunction();
+ nineAmFunction();
+ tenAmFunction();
+ elevenAmFunction();
+ twelvePmFunction();
+ onePmFunction();
+ twoPmFunction();
+ threePmFunction();
+ fourPmFunction();
+ fivePmFunction();
  sixPmFunction();
  sevenPmFunction();
  eightPmFunction();
@@ -209,6 +209,33 @@
       document.getElementById("23").setAttribute("class", "col-1 past")
      }
    } else {
+    if (hourOfDay[i] === midnight){
+      document.getElementById("24").setAttribute("class", "col-1 future")
+     }
+     if (hourOfDay[i] === oneAm){
+      document.getElementById("1").setAttribute("class", "col-1 future")
+     }
+     if (hourOfDay[i] === twoAm){
+      document.getElementById("2").setAttribute("class", "col-1 future")
+     }
+     if (hourOfDay[i] === threeAm){
+      document.getElementById("3").setAttribute("class", "col-1 future")
+     }
+     if (hourOfDay[i] === fourAm){
+      document.getElementById("4").setAttribute("class", "col-1 future")
+     }
+     if (hourOfDay[i] === fiveAm){
+      document.getElementById("5").setAttribute("class", "col-1 future")
+     }
+     if (hourOfDay[i] === sixAm){
+      document.getElementById("6").setAttribute("class", "col-1 future")
+     }
+     if (hourOfDay[i] === sevenAm){
+      document.getElementById("7").setAttribute("class", "col-1 future")
+     }
+     if (hourOfDay[i] === eightAm){
+      document.getElementById("8").setAttribute("class", "col-1 future")
+     }
      if (hourOfDay[i] === nineAm){
        document.getElementById("9").setAttribute("class", "col-1 future")
      }
@@ -236,58 +263,148 @@
      if (hourOfDay[i] === fivePm){
        document.getElementById("17").setAttribute("class", "col-1 future")
      }
+     if (hourOfDay[i] === sixPm){
+      document.getElementById("18").setAttribute("class", "col-1 future")
+     }
+     if (hourOfDay[i] === sevenPm){
+      document.getElementById("19").setAttribute("class", "col-1 future")
+     }
+     if (hourOfDay[i] === eightPm){
+      document.getElementById("20").setAttribute("class", "col-1 future")
+     }
+     if (hourOfDay[i] === ninePm){
+      document.getElementById("21").setAttribute("class", "col-1 future")
+     }
+     if (hourOfDay[i] === tenPm){
+      document.getElementById("22").setAttribute("class", "col-1 future")
+     }
+     if (hourOfDay[i] === elevenPm){
+      document.getElementById("23").setAttribute("class", "col-1 future")
+     }
    }
  }
 
  //Local Storage
- 
-   
-
+   document.getElementById("1-save").addEventListener("click",function(){
+     var nineText = document.getElementById("1-text").value;
+     localStorage.setItem("oneVal", oneText);
+     oneAmFunction();
+   });
+   document.getElementById("2-save").addEventListener("click",function(){
+     var nineText = document.getElementById("2-text").value;
+     localStorage.setItem("twoVal", twoText);
+     twoAmFunction();
+   });
+   document.getElementById("3-save").addEventListener("click",function(){
+     var nineText = document.getElementById("3-text").value;
+     localStorage.setItem("threeVal", threeText);
+     threeAmFunction();
+   });
+   document.getElementById("4-save").addEventListener("click",function(){
+     var nineText = document.getElementById("4-text").value;
+     localStorage.setItem("fourVal", fourText);
+     fourAmFunction();
+   });
+   document.getElementById("5-save").addEventListener("click",function(){
+     var nineText = document.getElementById("5-text").value;
+     localStorage.setItem("fiveVal", fiveText);
+     fiveAmFunction();
+   });
+   document.getElementById("6-save").addEventListener("click",function(){
+     var nineText = document.getElementById("6-text").value;
+     localStorage.setItem("sixVal", sixText);
+     sixAmFunction();
+   });  
+   document.getElementById("7-save").addEventListener("click",function(){
+     var nineText = document.getElementById("7-text").value;
+     localStorage.setItem("sevenVal", sevenText);
+     sevenAmFunction();
+   });
+   document.getElementById("8-save").addEventListener("click",function(){
+     var nineText = document.getElementById("8-text").value;
+     localStorage.setItem("eightVal", eightText);
+     eightAmFunction();
+   });
    document.getElementById("9-save").addEventListener("click",function(){
      var nineText = document.getElementById("9-text").value;
      localStorage.setItem("nVal", nineText);
-     nineFunction();
+     nineAmFunction();
    });
    document.getElementById("10-save").addEventListener("click",function(){
      var tenText = document.getElementById("10-text").value;
      localStorage.setItem("tenVal", tenText);
-     tenFunction();
+     tenAmFunction();
    })
    document.getElementById("11-save").addEventListener("click",function(){
      var elevenText = document.getElementById("11-text").value;
      localStorage.setItem("elevenVal", elevenText);
-     elevenFunction();
+     elevenAmFunction();
    })
    document.getElementById("12-save").addEventListener("click",function(){
      var twelveText = document.getElementById("12-text").value;
      localStorage.setItem("twelveVal", twelveText);
-     twelveFunction();
+     twelvePmFunction();
    })
-   document.getElementById("1-save").addEventListener("click",function(){
-     var oneText = document.getElementById("1-text").value;
-     localStorage.setItem("oneVal", oneText);
-     oneFunction();
+   document.getElementById("13-save").addEventListener("click",function(){
+     var onePmText = document.getElementById("13-text").value;
+     localStorage.setItem("onePmVal", onePmText);
+     onePmFunction();
    })
-   document.getElementById("2-save").addEventListener("click",function(){
-     var twoText = document.getElementById("2-text").value;
-     localStorage.setItem("twoVal", twoText);
-     twoFunction();
+   document.getElementById("14-save").addEventListener("click",function(){
+     var twoPmText = document.getElementById("14-text").value;
+     localStorage.setItem("twoPmVal", twoPmText);
+     twoPmFunction();
    })
-   document.getElementById("3-save").addEventListener("click",function(){
-     var threeText = document.getElementById("3-text").value;
-     localStorage.setItem("threeVal", threeText);
-     threeFunction();
+   document.getElementById("15-save").addEventListener("click",function(){
+     var threePmText = document.getElementById("15-text").value;
+     localStorage.setItem("threePmVal", threePmText);
+     threePmFunction();
    })
-   document.getElementById("4-save").addEventListener("click",function(){
-     var fourText = document.getElementById("4-text").value;
-     localStorage.setItem("fourVal", fourText);
-     fourFunction();
+   document.getElementById("16-save").addEventListener("click",function(){
+     var fourPmText = document.getElementById("16-text").value;
+     localStorage.setItem("fourPmVal", fourPmText);
+     fourPmFunction();
    })
-   document.getElementById("5-save").addEventListener("click",function(){
-     var fiveText = document.getElementById("5-text").value;
-     localStorage.setItem("fiveVal", fiveText);
-     fiveFunction();
+   document.getElementById("17-save").addEventListener("click",function(){
+     var fivePmText = document.getElementById("17-text").value;
+     localStorage.setItem("fivePmVal", fivePmText);
+     fivePmFunction();
    })
+   document.getElementById("18-save").addEventListener("click",function(){
+    var sixPmText = document.getElementById("18-text").value;
+    localStorage.setItem("sixPmVal", sixPmText);
+    sixPmFunction();
+   });
+   document.getElementById("19-save").addEventListener("click",function(){
+    var sevenPmText = document.getElementById("19-text").value;
+    localStorage.setItem("sevenPmVal", sevenPmText);
+    sevenPmFunction();
+   });
+   document.getElementById("20-save").addEventListener("click",function(){
+    var eightPmText = document.getElementById("20-text").value;
+    localStorage.setItem("eightPmVal", eightPmText);
+    eightPmFunction();
+   });
+   document.getElementById("21-save").addEventListener("click",function(){
+    var ninePmText = document.getElementById("21-text").value;
+    localStorage.setItem("ninePmVal", ninePmText);
+    ninePmFunction();
+   });
+   document.getElementById("22-save").addEventListener("click",function(){
+    var tenPmText = document.getElementById("22-text").value;
+    localStorage.setItem("tenPmVal", tenPmText);
+    tenPmFunction();
+   });
+   document.getElementById("23-save").addEventListener("click",function(){
+    var elevenPmText = document.getElementById("23-text").value;
+    localStorage.setItem("elevenPmVal", elevenPmText);
+    elevenPmFunction();
+   });
+   document.getElementById("24-save").addEventListener("click",function(){
+    var twelveAmText = document.getElementById("24-text").value;
+    localStorage.setItem("twelveAmVal", twelveAmText);
+    midnightFunction();
+   });
 
    //display stored event
    function nineFunction(){
