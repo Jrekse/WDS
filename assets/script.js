@@ -30,7 +30,7 @@
 
  //assigns hour variables and grabs the current hour from dayjs
  var currentHour = dayjs().hour();
- var midnight = 0
+ var midnight = 24;
  var oneAm = 1;
  var twoAm = 2;
  var threeAm = 3
@@ -55,7 +55,7 @@
  var tenPm = 22;
  var elevenPm = 23;
  //puts hours into an array to be looped through
- var hourOfDay = [nineAm,tenAm,elevenAm,twelvePm,onePm,twoPm,threePm,fourPm,fivePm];
+ var hourOfDay = [midnight,oneAm,twoAm,threeAm,fourAm,fiveAm,sixAm,sevenAm,eightAm,nineAm,tenAm,elevenAm,twelvePm,onePm,twoPm,threePm,fourPm,fivePm,sixPm,sevenPm,eightPm,ninePm,tenPm,elevenPm];
  
  var i;
  //loops through all hours in array
@@ -63,6 +63,33 @@
    //checks for the current hour and matches it to an array item
    if (hourOfDay[i] === currentHour){
      //asks which hour it is specifically, then sorts hour to be color coded on the UI (lines 122 - 207)
+     if (hourOfDay[i] === midnight){
+      document.getElementById("24").setAttribute("class", "col-1 present")
+     }
+     if (hourOfDay[i] === oneAm){
+      document.getElementById("1").setAttribute("class", "col-1 present")
+     }
+     if (hourOfDay[i] === twoAm){
+      document.getElementById("2").setAttribute("class", "col-1 present")
+     }
+     if (hourOfDay[i] === threeAm){
+      document.getElementById("3").setAttribute("class", "col-1 present")
+     }
+     if (hourOfDay[i] === fourAm){
+      document.getElementById("4").setAttribute("class", "col-1 present")
+     }
+     if (hourOfDay[i] === fiveAm){
+      document.getElementById("5").setAttribute("class", "col-1 present")
+     }
+     if (hourOfDay[i] === sixAm){
+      document.getElementById("6").setAttribute("class", "col-1 present")
+     }
+     if (hourOfDay[i] === sevenAm){
+      document.getElementById("7").setAttribute("class", "col-1 present")
+     }
+     if (hourOfDay[i] === eightAm){
+      document.getElementById("8").setAttribute("class", "col-1 present")
+     }
      if (hourOfDay[i] === nineAm){
        document.getElementById("9").setAttribute("class", "col-1 present")
      }
@@ -90,7 +117,52 @@
      if (hourOfDay[i] === fivePm){
        document.getElementById("17").setAttribute("class", "col-1 present")
      }
+     if (hourOfDay[i] === sixPm){
+      document.getElementById("18").setAttribute("class", "col-1 present")
+     }
+     if (hourOfDay[i] === sevenPm){
+      document.getElementById("19").setAttribute("class", "col-1 present")
+     }
+     if (hourOfDay[i] === eightPm){
+      document.getElementById("20").setAttribute("class", "col-1 present")
+     }
+     if (hourOfDay[i] === ninePm){
+      document.getElementById("21").setAttribute("class", "col-1 present")
+     }
+     if (hourOfDay[i] === tenPm){
+      document.getElementById("22").setAttribute("class", "col-1 present")
+     }
+     if (hourOfDay[i] === elevenPm){
+      document.getElementById("23").setAttribute("class", "col-1 present")
+     }
    } else if (hourOfDay[i] < currentHour){
+    if (hourOfDay[i] === midnight){
+      document.getElementById("24").setAttribute("class", "col-1 past")
+     }
+     if (hourOfDay[i] === oneAm){
+      document.getElementById("1").setAttribute("class", "col-1 past")
+     }
+     if (hourOfDay[i] === twoAm){
+      document.getElementById("2").setAttribute("class", "col-1 past")
+     }
+     if (hourOfDay[i] === threeAm){
+      document.getElementById("3").setAttribute("class", "col-1 past")
+     }
+     if (hourOfDay[i] === fourAm){
+      document.getElementById("4").setAttribute("class", "col-1 past")
+     }
+     if (hourOfDay[i] === fiveAm){
+      document.getElementById("5").setAttribute("class", "col-1 past")
+     }
+     if (hourOfDay[i] === sixAm){
+      document.getElementById("6").setAttribute("class", "col-1 past")
+     }
+     if (hourOfDay[i] === sevenAm){
+      document.getElementById("7").setAttribute("class", "col-1 past")
+     }
+     if (hourOfDay[i] === eightAm){
+      document.getElementById("8").setAttribute("class", "col-1 past")
+     }
      if (hourOfDay[i] === nineAm){
        document.getElementById("9").setAttribute("class", "col-1 past")
      }
@@ -117,6 +189,24 @@
      }
      if (hourOfDay[i] === fivePm){
        document.getElementById("17").setAttribute("class", "col-1 past")
+     }
+     if (hourOfDay[i] === sixPm){
+      document.getElementById("18").setAttribute("class", "col-1 past")
+     }
+     if (hourOfDay[i] === sevenPm){
+      document.getElementById("19").setAttribute("class", "col-1 past")
+     }
+     if (hourOfDay[i] === eightPm){
+      document.getElementById("20").setAttribute("class", "col-1 past")
+     }
+     if (hourOfDay[i] === ninePm){
+      document.getElementById("21").setAttribute("class", "col-1 past")
+     }
+     if (hourOfDay[i] === tenPm){
+      document.getElementById("22").setAttribute("class", "col-1 past")
+     }
+     if (hourOfDay[i] === elevenPm){
+      document.getElementById("23").setAttribute("class", "col-1 past")
      }
    } else {
      if (hourOfDay[i] === nineAm){
