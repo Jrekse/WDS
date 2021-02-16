@@ -135,6 +135,7 @@
      if (hourOfDay[i] === elevenPm){
       document.getElementById("23").setAttribute("class", "col-1 present")
      }
+     //if the hour already happened
    } else if (hourOfDay[i] < currentHour){
     if (hourOfDay[i] === midnight){
       document.getElementById("24").setAttribute("class", "col-1 past")
@@ -208,6 +209,7 @@
      if (hourOfDay[i] === elevenPm){
       document.getElementById("23").setAttribute("class", "col-1 past")
      }
+     //hours that havent happened yet
    } else {
     if (hourOfDay[i] === midnight){
       document.getElementById("24").setAttribute("class", "col-1 future")
