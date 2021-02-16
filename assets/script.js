@@ -286,42 +286,42 @@
 
  //Local Storage
    document.getElementById("1-save").addEventListener("click",function(){
-     var nineText = document.getElementById("1-text").value;
+     var oneText = document.getElementById("1-text").value;
      localStorage.setItem("oneVal", oneText);
      oneAmFunction();
    });
    document.getElementById("2-save").addEventListener("click",function(){
-     var nineText = document.getElementById("2-text").value;
+     var twoText = document.getElementById("2-text").value;
      localStorage.setItem("twoVal", twoText);
      twoAmFunction();
    });
    document.getElementById("3-save").addEventListener("click",function(){
-     var nineText = document.getElementById("3-text").value;
+     var threeText = document.getElementById("3-text").value;
      localStorage.setItem("threeVal", threeText);
      threeAmFunction();
    });
    document.getElementById("4-save").addEventListener("click",function(){
-     var nineText = document.getElementById("4-text").value;
+     var fourText = document.getElementById("4-text").value;
      localStorage.setItem("fourVal", fourText);
      fourAmFunction();
    });
    document.getElementById("5-save").addEventListener("click",function(){
-     var nineText = document.getElementById("5-text").value;
+     var fiveText = document.getElementById("5-text").value;
      localStorage.setItem("fiveVal", fiveText);
      fiveAmFunction();
    });
    document.getElementById("6-save").addEventListener("click",function(){
-     var nineText = document.getElementById("6-text").value;
+     var sixText = document.getElementById("6-text").value;
      localStorage.setItem("sixVal", sixText);
      sixAmFunction();
    });  
    document.getElementById("7-save").addEventListener("click",function(){
-     var nineText = document.getElementById("7-text").value;
+     var sevenText = document.getElementById("7-text").value;
      localStorage.setItem("sevenVal", sevenText);
      sevenAmFunction();
    });
    document.getElementById("8-save").addEventListener("click",function(){
-     var nineText = document.getElementById("8-text").value;
+     var eightText = document.getElementById("8-text").value;
      localStorage.setItem("eightVal", eightText);
      eightAmFunction();
    });
@@ -407,41 +407,101 @@
    });
 
    //display stored event
-   function nineFunction(){
+   function oneAmFunction(){
+    var oneStored = localStorage.getItem("oneVal");
+    document.getElementById("1-text").innerHTML = oneStored;
+   }
+   function twoAmFunction(){
+    var twoStored = localStorage.getItem("twoVal");
+    document.getElementById("2-text").innerHTML = twoStored;
+   }
+   function threeAmFunction(){
+    var threeStored = localStorage.getItem("threeVal");
+    document.getElementById("3-text").innerHTML = threeStored;
+   }
+   function fourAmFunction(){
+    var fourStored = localStorage.getItem("fourVal");
+    document.getElementById("4-text").innerHTML = fourStored;
+   }
+   function fiveAmFunction(){
+    var fiveStored = localStorage.getItem("fiveVal");
+    document.getElementById("5-text").innerHTML = fiveStored;
+   }
+   function sixAmFunction(){
+    var sixStored = localStorage.getItem("sixVal");
+    document.getElementById("6-text").innerHTML = sixStored;
+   }
+   function sevenAmFunction(){
+    var sevenStored = localStorage.getItem("sevenVal");
+    document.getElementById("7-text").innerHTML = sevenStored;
+   }
+   function eightAmFunction(){
+    var eightStored = localStorage.getItem("eightVal");
+    document.getElementById("8-text").innerHTML = eightStored;
+   }
+   function nineAmFunction(){
      var nineStored = localStorage.getItem("nVal");
      document.getElementById("9-text").innerHTML = nineStored;
    }
-   function tenFunction(){
+   function tenAmFunction(){
      var tenStored = localStorage.getItem("tenVal");
      document.getElementById("10-text").innerHTML = tenStored;
    }
-   function elevenFunction(){
+   function elevenAmFunction(){
      var elevenStored = localStorage.getItem("elevenVal");
      document.getElementById("11-text").innerHTML = elevenStored;
    }
-   function twelveFunction(){
-     var twelveStored = localStorage.getItem("twelveVal");
-     document.getElementById("12-text").innerHTML = twelveStored;
+   function twelvePmFunction(){
+     var twelvePmStored = localStorage.getItem("twelveVal");
+     document.getElementById("12-text").innerHTML = twelvePmStored;
    }
-   function oneFunction(){
-     var oneStored = localStorage.getItem("oneVal");
-     document.getElementById("1-text").innerHTML = oneStored;
+   function onePmFunction(){
+     var onePmStored = localStorage.getItem("onePmVal");
+     document.getElementById("13-text").innerHTML = onePmStored;
    }
-   function twoFunction(){
-     var twoStored = localStorage.getItem("twoVal");
-     document.getElementById("2-text").innerHTML = twoStored;
+   function twoPmFunction(){
+     var twoPmStored = localStorage.getItem("twoPmVal");
+     document.getElementById("14-text").innerHTML = twoPmStored;
    }
-   function threeFunction(){
-     var threeStored = localStorage.getItem("threeVal");
-     document.getElementById("3-text").innerHTML = threeStored;
+   function threePmFunction(){
+     var threePmStored = localStorage.getItem("threePmVal");
+     document.getElementById("15-text").innerHTML = threePmStored;
    }
-   function fourFunction(){
-     var fourStored = localStorage.getItem("fourVal");
-     document.getElementById("4-text").innerHTML = fourStored;
+   function fourPmFunction(){
+     var fourPmStored = localStorage.getItem("fourPmVal");
+     document.getElementById("16-text").innerHTML = fourPmStored;
    }
-   function fiveFunction(){
-     var fiveStored = localStorage.getItem("fiveVal");
-     document.getElementById("5-text").innerHTML = fiveStored;
+   function fivePmFunction(){
+     var fivePmStored = localStorage.getItem("fivePmVal");
+     document.getElementById("17-text").innerHTML = fivePmStored;
+   }
+   function sixPmFunction(){
+    var sixPmStored = localStorage.getItem("sixPmVal");
+    document.getElementById("18-text").innerHTML = sixPmStored;
+   }
+   function sevenPmFunction(){
+    var sevenPmStored = localStorage.getItem("sevenPmVal");
+    document.getElementById("19-text").innerHTML = sevenPmStored;
+   }
+   function eightPmFunction(){
+    var eightPmStored = localStorage.getItem("eightPmVal");
+    document.getElementById("20-text").innerHTML = eightPmStored;
+   }
+   function ninePmFunction(){
+    var ninePmStored = localStorage.getItem("ninePmVal");
+    document.getElementById("21-text").innerHTML = ninePmStored;
+   }
+   function tenPmFunction(){
+    var tenPmStored = localStorage.getItem("tenPmVal");
+    document.getElementById("22-text").innerHTML = tenPmStored;
+   }
+   function elevenPmFunction(){
+    var elevenPmStored = localStorage.getItem("elevenPmVal");
+    document.getElementById("23-text").innerHTML = elevenPmStored;
+   }
+   function midnightFunction(){
+    var twelveAmStored = localStorage.getItem("twelveAmVal");
+    document.getElementById("24-text").innerHTML = twelveAmStored;
    }
 
    //clears localstorage and refreshes page
