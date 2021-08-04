@@ -1,13 +1,12 @@
-.jumbotron{
+.card{
   background-color: rgb(131, 157, 154);
-}
-.row{
-  margin-top:5px;
-  margin-bottom: 5px;
+  margin: 0px;
+  padding: 1.5rem;
 }
 .hour{
   background-color: rgb(100, 111, 75);
   color: white;
+  text-align: center;
 }
 .saveBtn{
   background-color: rgb(123, 178, 217);
@@ -23,4 +22,7 @@
 }
 .future{
   background-color: rgb(238, 210, 105);
+}
+.t{
+  height: 80px;
 }

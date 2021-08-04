@@ -24,134 +24,146 @@
   </head>
 
   <body class="body">
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Schedule</h1>
-      <br>
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container time-block">
-      <!-- Timeblocks go here -->
 
-      <center><button class="btn btn-outline-danger" id="clear-btn">Clear Schedule</button></center>
-      <br>
-
-      <!--row 8am-->
-      <div id="8" class="row time-block">
-        <div class="col-md-1 hour">
-          8am
+    <div class="row">
+      <div class="col-4">
+        <div class="card">
+          <h1 class="display-3">Work Day Schedule</h1>
+          <p id="currentDay" class="lead"></p>
+          <button class="btn btn-outline-dark" id="clear-btn">Clear Schedule</button>
         </div>
-        <textarea class="col-md-10 description" placeholder="Enter events here..."></textarea>
-        <button class="btn saveBtn col-md-1 icon-container">
-            <i class="far fa-save fa-lg"></i>
-        </button>
       </div>
-
-      <!--row 9am-->
-      <div id="9" class="row time-block">
-        <div class="col-md-1 hour">
-          9am
-        </div>
-        <textarea class="col-md-10 description" placeholder="Enter events here..."></textarea>
-        <button class="btn saveBtn col-md-1 icon-container">
-            <i class="far fa-save fa-lg"></i>
-        </button>
-      </div>
-
-      <!--row 10am-->
-      <div id="10" class="row time-block">
-        <div class="col-md-1 hour">
-          10am
-        </div>
-        <textarea class="col-md-10 description" placeholder="Enter events here..."></textarea>
-        <button class="btn saveBtn col-md-1 icon-container">
-            <i class="far fa-save fa-lg"></i>
-        </button>
-      </div>
-
-      <!--row 11am-->
-      <div id="11" class="row time-block">
-        <div class="col-md-1 hour">
-          11am
-        </div>
-        <textarea class="col-md-10 description" placeholder="Enter events here..."></textarea>
-        <button class="btn saveBtn col-md-1 icon-container">
-          <i class="far fa-save fa-lg"></i>
-        </button>
-      </div>
-
-      <!--row 12pm-->
-      <div id="12" class="row time-block">
-        <div class="col-md-1 hour">
-          12pm
-        </div>
-        <textarea class="col-md-10 description" placeholder="Enter events here..."></textarea>
-        <button class="btn saveBtn col-md-1 icon-container">
-          <i class="far fa-save fa-lg"></i>
-        </button>
-      </div>
-
-      <!--row 1pm-->
-      <div id="13" class="row time-block">
-        <div class="col-md-1 hour">
-          1pm
-        </div>
-        <textarea class="col-md-10 description" placeholder="Enter events here..."></textarea>
-        <button class="btn saveBtn col-md-1 icon-container">
-          <i class="far fa-save fa-lg"></i>
-        </button>
-      </div>
-
-      <!--row 2pm-->
-      <div id="14" class="row time-block">
-        <div class="col-md-1 hour">
-          2pm
-        </div>
-        <textarea class="col-md-10 description" placeholder="Enter events here..."></textarea>
-        <button class="btn saveBtn col-md-1 icon-container">
-          <i class="far fa-save fa-lg"></i>
-        </button>
-      </div>
-
-      <!--row 3pm-->
-      <div id="15" class="row time-block">
-        <div class="col-md-1 hour">
-          3pm
-        </div>
-        <textarea class="col-md-10 description" placeholder="Enter events here..."></textarea>
-        <button class="btn saveBtn col-md-1 icon-container">
-          <i class="far fa-save fa-lg"></i>
-        </button>
-      </div>
-
-      <!--row 4pm-->
-      <div id="16" class="row time-block">
-        <div class="col-md-1 hour">
-          4pm
-        </div>
-        <textarea class="col-md-10 description" placeholder="Enter events here..."></textarea>
-        <button class="btn saveBtn col-md-1 icon-container">
-          <i class="far fa-save fa-lg"></i>
-        </button>
-      </div>
-
-      <!--row 5pm-->
-      <div id="17" class="row time-block">
-        <div class="col-sm-1 hour">
-          5pm
-        </div>
-        <textarea class="col-sm-10 description" placeholder="Enter events here..."></textarea>
-        <button class="btn saveBtn col-sm-1 icon-container">
-          <i class="far fa-save fa-lg"></i>
-        </button>
-      </div>
-
-      <br>
-      <br>
-
-      
-      <!--End TimeBlocK-->
-
+      <div class="col-8"></div>
     </div>
+
+
+    <div class="row">
+
+      <div class="time-block col-12">
+        <!-- Timeblocks go here -->
+
+        <br>
+
+        <!--row 8am-->
+        <div id="8" class="row t time-block">
+          <div class="col-md-1 hour">
+            8am
+          </div>
+          <textarea class="col-md-10 description" placeholder="Enter events here..."></textarea>
+          <button class="btn saveBtn col-md-1 icon-container">
+              <i class="far fa-save fa-lg"></i>
+          </button>
+        </div>
+<hr>
+        <!--row 9am-->
+        <div id="9" class="row t time-block">
+          <div class="col-md-1 hour">
+            9am
+          </div>
+          <textarea class="col-md-10 description" placeholder="Enter events here..."></textarea>
+          <button class="btn saveBtn col-md-1 icon-container">
+              <i class="far fa-save fa-lg"></i>
+          </button>
+        </div>
+
+        <!--row 10am-->
+        <div id="10" class="row t time-block">
+          <div class="col-md-1 hour">
+            10am
+          </div>
+          <textarea class="col-md-10 description" placeholder="Enter events here..."></textarea>
+          <button class="btn saveBtn col-md-1 icon-container">
+              <i class="far fa-save fa-lg"></i>
+          </button>
+        </div>
+
+        <!--row 11am-->
+        <div id="11" class="row t time-block">
+          <div class="col-md-1 hour">
+            11am
+          </div>
+          <textarea class="col-md-10 description" placeholder="Enter events here..."></textarea>
+          <button class="btn saveBtn col-md-1 icon-container">
+            <i class="far fa-save fa-lg"></i>
+          </button>
+        </div>
+
+        <!--row 12pm-->
+        <div id="12" class="row t time-block">
+          <div class="col-md-1 hour">
+            12pm
+          </div>
+          <textarea class="col-md-10 description" placeholder="Enter events here..."></textarea>
+          <button class="btn saveBtn col-md-1 icon-container">
+            <i class="far fa-save fa-lg"></i>
+          </button>
+        </div>
+
+        <!--row 1pm-->
+        <div id="13" class="row t time-block">
+          <div class="col-md-1 hour">
+            1pm
+          </div>
+          <textarea class="col-md-10 description" placeholder="Enter events here..."></textarea>
+          <button class="btn saveBtn col-md-1 icon-container">
+            <i class="far fa-save fa-lg"></i>
+          </button>
+        </div>
+
+        <!--row 2pm-->
+        <div id="14" class="row t time-block">
+          <div class="col-md-1 hour">
+            2pm
+          </div>
+          <textarea class="col-md-10 description" placeholder="Enter events here..."></textarea>
+          <button class="btn saveBtn col-md-1 icon-container">
+            <i class="far fa-save fa-lg"></i>
+          </button>
+        </div>
+
+        <!--row 3pm-->
+        <div id="15" class="row t time-block">
+          <div class="col-md-1 hour">
+            3pm
+          </div>
+          <textarea class="col-md-10 description" placeholder="Enter events here..."></textarea>
+          <button class="btn saveBtn col-md-1 icon-container">
+            <i class="far fa-save fa-lg"></i>
+          </button>
+        </div>
+
+        <!--row 4pm-->
+        <div id="16" class="row t time-block">
+          <div class="col-md-1 hour">
+            4pm
+          </div>
+          <textarea class="col-md-10 description" placeholder="Enter events here..."></textarea>
+          <button class="btn saveBtn col-md-1 icon-container">
+            <i class="far fa-save fa-lg"></i>
+          </button>
+        </div>
+
+        <!--row 5pm-->
+        <div id="17" class="row t time-block">
+          <div class="col-sm-1 hour">
+            5pm
+          </div>
+          <textarea class="col-sm-10 description" placeholder="Enter events here..."></textarea>
+          <button class="btn saveBtn col-sm-1 icon-container">
+            <i class="far fa-save fa-lg"></i>
+          </button>
+        </div>
+
+        <br>
+        <br>
+
+        
+        <!--End TimeBlocK-->
+
+      </div>
+    </div>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"></script>
